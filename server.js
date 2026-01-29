@@ -1,7 +1,10 @@
-import express from "express"
-import "dotenv/config"
+import express from "express";
+import "dotenv/config";
+import cors from "cors";
 
 const app = express();
+
+app.use(cors());
 
 const BASE_URL = process.env.BASE_URL;
 const API_TOKEN = process.env.API_TOKEN;
